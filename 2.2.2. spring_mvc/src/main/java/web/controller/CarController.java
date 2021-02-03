@@ -22,10 +22,10 @@ public class CarController {
         cars.add(new Car("owner2","model2",200));
         cars.add(new Car("owner3","model3",300));
         cars.add(new Car("owner4","model4",400));
-        cars.add(new Car("owner4","model4",400));
+        cars.add(new Car("owner5","model5",500));
         List<Car>result =cars.stream().limit(id).collect(Collectors.toList());
         model.addAttribute("messages", result);
-        return "index";
+        return "carView";
     }
 
 }
